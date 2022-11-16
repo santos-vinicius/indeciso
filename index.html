@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind import -->
+  <script> <!-- Tailwind Config --> 
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brown: {
+              base: '#493C3C',
+              light: '#8C7474',
+              dark: '#272020'
+            },
+            yellow: '#FFB700',
+            gray: '#D9D9D9'
+
+          },
+          fontFamily: {
+             inter: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <title>Indeciso</title>
+</head>
+<body class="bg-brown-base font-inter flex justify-center items-center h-screen flex-col">
+  <main class="px-6 flex flex-col justify-center items-center ">
+    <h1 class="font-bold text-white text-center text-2xl">indeciso</h1>
+
+    <section class="flex justify-center items-center flex-col mb-4 "> 
+      <img class="w-1/2	" src="./assets/images/gato.png" alt="Gato marrom de patas cruzadas e expressão pensante">
+      <p class="font-bold	text-white w-80	text-lg text-justify">Vamos acabar com essa dúvida, coloque as duas opções abaixo e eu escolho uma.</p> 
+    </section>
+
+    <div>
+      <form action="" class="mb-3 flex flex-col justify-center items-center">
+        <input type="text" id="firstOption" name="first" class="rounded mb-3 py-2 p-3 w-80 hover:ring-1 hover:ring-yellow focus:border-yellow focus:ring-1 focus:ring-yellow" placeholder="Primeira opção">
+        <p class="font-bold	text-white text-center mb-3">Ou</p>
+        <input type="text" id="secondOption" name="second" class="rounded mb-4 py-2 p-3 w-80 hover:ring-1 hover:ring-yellow focus:border-yellow focus:ring-1 focus:ring-yellow" placeholder="Segunda opção">
+        <button class="font-bold text-white bg-brown-light w-80 py-2 rounded hover:bg-brown-dark duration-150" type="submit" id="btn">Enviar</button>
+      </form>
+    </div>
+
+    <div class="my-4">
+      <h2 class="font-bold text-yellow text-center mb-3">Opção escolhida:</h2>
+      <p class="font-semibold text-white w-80 text-justify" id="option">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis purus vel nisl varius viverra.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="fixed bottom-0 mt-6 text-white font-bold">Feito com &#10024; por <a href="/" class="text-yellow">Vinicius Santos</a></footer>
+  
+<!-- JS import -->
+<script src="./assets/js/main.js"></script>  
+</html>
