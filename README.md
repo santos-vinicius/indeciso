@@ -1,5 +1,5 @@
 ## 🐱 Indeciso
-![Indeciso app banner](./assets/images/Github%20banner.png)
+![Indeciso app banner](./assets/images/github-banner.png)
 
 Indeciso is a web app designed to take the guesswork out of choosing between two options.
 
